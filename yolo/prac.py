@@ -2,7 +2,7 @@ import cv2
 import streamlit as st
 from ultralytics import YOLO
 
-model = YOLO(r"D:\ACM_AI\DL\yolo\prac.py")
+model = YOLO(r"D:\ACM_AI\DL\yolo\best (1).pt")
 st.title("YOLO Object Detection with Webcam 🎥")
 
 # Buttons for starting/stopping video
