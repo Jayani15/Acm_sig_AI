@@ -52,7 +52,7 @@ CREATE TABLE chat_history (
     bot_msg TEXT NOT NULL,
     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
-
+``` 
 ✨ Usage
 Type a question related to the loaded web content (LangChain docs).
 The chatbot answers based on document similarity.
