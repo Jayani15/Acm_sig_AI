@@ -53,10 +53,10 @@ CREATE TABLE chat_history (
     timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 ``` 
-✨ Usage
-Type a question related to the loaded web content (LangChain docs).
-The chatbot answers based on document similarity.
-Enable "Show previous Chats" to view the last 5 interactions.
+# ✨ Usage
+- Type a question related to the loaded web content (LangChain docs).
+- The chatbot answers based on document similarity.
+- Enable "Show previous Chats" to view the last 5 interactions.
 
-✍️ Author
+# ✍️ Author
 Made by Jayani
