@@ -34,9 +34,54 @@ Think of it as your very own **AI-powered Snapchat mirror** 😎
 | 🖼️ Emojis | Transparent PNG images (48×48 / 128×128) |
 | 💻 Language | Python 3.8+ |
 
+
 ---
+
+## 🚀 Setup & Usage
+
+### 1️⃣ Step 1: Download / Copy Project
+
+Simply copy the **Face_emoji** folder to your local system.  
+Make sure the following files are in the same directory:
+- `app.py`
+- `emotion_cnn.h5`
+- `emojis/` folder containing your PNG emoji files.
+
+---
+
+### 2️⃣ Step 2: Install Dependencies
+
+Open a terminal inside your project folder and run:
+
+```bash
+pip install tensorflow opencv-python streamlit numpy
+
+If you prefer virtual environment:
+python -m venv venv
+venv\Scripts\activate  # (on Windows)
+pip install -r requirements.txt
+
+```
+---
+🪄 How It Works
+
+Face Detection:
+OpenCV locates faces in each webcam frame.
+
+Emotion Recognition:
+The cropped face is resized and passed to your trained CNN.
+
+Emoji Overlay:
+The detected emotion selects the corresponding PNG from /emojis/ and overlays it over your face with transparency masking.
+
+Live Display:
+Streamlit continuously renders frames in real time through your browser interface.
+
+---
+
 🧑‍💻 Author
 
 Jayani Immidi
 💡 AI Engineer • Computer Vision Enthusiast
+
 📬 Made with ❤️ and OpenCV
